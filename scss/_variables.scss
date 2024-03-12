@@ -1,0 +1,37 @@
+//breakpoints
+@mixin padding {
+    @media (max-width: 1090px) {
+     @content;
+    }
+};
+
+@mixin tablet {
+    @media (max-width: 768px) {
+     @content;
+    }
+};
+
+@mixin mobile {
+    @media (max-width: 480px) {
+     @content;
+    }
+};
+
+@mixin desktop {
+    @media (min-width: 769px) {
+     @content;
+    }
+};
+
+@mixin large-tablet {
+    @media (max-width: 991px) {
+     @content;
+    }
+};
+
+
+//colors
+$primary: #000;
+$secondary: #fff;
+$brand: #007aff;
+$secondary-light: #dadada;
